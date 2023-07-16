@@ -1,0 +1,106 @@
+#main{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background: url(./../Images/Background1.png) top center;
+    background-size: cover;
+}
+@media (min-width: 1024px){
+    #main{
+        width: 100%;
+        height: 100vh;
+        /* background-attachment: fixed; */
+    }
+}
+
+.nav-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin: 10px 100px 0 600px;
+
+    /* gap: 20px; */
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    margin:100px 450px 0 250px;
+    padding:0;
+    text-align: left;
+    vertical-align: middle;
+}
+h1{
+    font-weight: 700;
+    line-height: 48px;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #000000;
+    /* margin: -100px 0px 0px 250px; */
+}
+h2{
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: lowercase;
+    color: #000000;
+    /* margin: -100px 0px 0px 250px; */
+}
+
+.Button {
+    font-size: 22px;
+    border-radius: 5px;
+    /* margin: 0px 5px; */
+    padding: 4px 12px;
+    border: 0;
+    background-Color:rgba(0,0,0,0);
+  }
+  
+  .Button.active {
+    background-color:#F84646;
+    color: #fff;
+  }
+
+  .input{
+    width: 10px;
+    height: 30px;
+  }
+
+  .SearchBar {
+    display: flex;
+    align-items: center;
+  }
+
+  .SearchInputWrapper {
+    position: relative;
+  }
+  
+  
+  .SearchInput {
+    flex: 1;
+    height: 36px;
+    width: 350px;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+
+  .SearchButton {
+    position: absolute;
+    top: 10px;
+    right:10px;
+    height: 30px;
+    width: 60px;
+    background-color: #892CDC;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .SearchButton:active {
+    background-color: #48146f;
+  }
